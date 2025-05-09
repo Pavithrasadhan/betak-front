@@ -12,7 +12,7 @@ import Register from "./pages/authentication/Register";
 import EditProperties from "./pages/properties/EditProperties";
 import EditUser from "./pages/user/EditUser";
 import Amenities from "./pages/amenities/Amenities";
-import AddAmenities from "./pages/amenities/AddAmenities";
+
 import EditAmenities from "./pages/amenities/EditAmenities";
 import HeroPage from "./pages/HeroPage";
 import AdminLayout from "./pages/AdminLayout";
@@ -29,6 +29,7 @@ import AdminMessages from "./pages/Adminmessage";
 import RentalRuleTable from "./pages/rental/Rental"
 import UserRentals from "./pages/UserRentals";
 import AdminRentals from "./pages/rental/AdminRentalView";
+import AddAmenities from "./pages/amenities/Addamenities";
 
 function App() {
   return (
