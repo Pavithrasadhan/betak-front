@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://betak-backend.onrender.com',
+  baseURL: 'https://betak-backend.onrender.com/api',
 });
 
 API.interceptors.request.use((config) => {
