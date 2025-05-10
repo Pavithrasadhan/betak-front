@@ -114,22 +114,6 @@ const EditUser = () => {
     }
   };
 
-  const previewImage = (file) => {
-    if (!file) return null;
-
-    // If the file is a string (URL), return the URL directly
-    if (typeof file === 'string') {
-      return `https://betak-backend.onrender.com/${file.replace(/\\/g, '/')}`;
-    }
-
-    // If the file is an object (for new uploads), create a URL from the file object
-    if (file instanceof Blob) {
-      return URL.createObjectURL(file);
-    }
-
-    return null;
-  };
-
   return (
     <div className="container content-wrapper mt-4">
       <h2>{t('edit_user')}</h2>
@@ -202,13 +186,6 @@ const EditUser = () => {
                 accept="image/*"
                 aria-label={t('passport_first_page')}
               />
-              {previewImage(formData.passportFirstPage) && (
-                <img
-                  src={previewImage(formData.passportFirstPage)}
-                  alt="Passport First Preview"
-                  style={{ width: '100px', marginTop: '10px' }}
-                />
-              )}
             </div>
 
             <div className="form-group">
@@ -222,13 +199,6 @@ const EditUser = () => {
                 accept="image/*"
                 aria-label={t('passport_second_page')}
               />
-              {previewImage(formData.passportSecondPage) && (
-                <img
-                  src={previewImage(formData.passportSecondPage)}
-                  alt="Passport Second Preview"
-                  style={{ width: '100px', marginTop: '10px' }}
-                />
-              )}
             </div>
           </div>
         </div>
