@@ -178,6 +178,7 @@
   "create_account": "Create an account",
   "error_message": "Login failed",
   "title": "Login to your account",
+  "addAmenity": "Add Amenity",
 
     "sidebar": {
     "dashboard": "Dashboard",
@@ -200,7 +201,7 @@
     "errorNameRequired": "Amenity name is required",
     "errorAdd": "Failed to add amenity",
     "amenities": "Amenities",
-    "addAmenity": "Add Amenity",
+    
     "icon": "Icon",
     "name": "Name",
     "action": "Action",
