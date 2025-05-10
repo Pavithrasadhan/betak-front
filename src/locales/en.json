@@ -192,7 +192,7 @@
   },
 
   "addAmenity": {
-    "title": "Add Amenity",
+    "title": "+ Add Amenity",
     "label": "Amenity Name",
     "placeholderIcon": "Enter amenity icon",
     "placeholderName": "Enter amenity name",
