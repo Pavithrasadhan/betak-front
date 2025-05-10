@@ -25,7 +25,7 @@ const HeroPage = () => {
           
           <div
             style={{
-              backgroundImage: `url("/src/assets/bg.jpg")`,
+              backgroundImage: `url("/bg.jpg")`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               filter: 'blur(0.7px)',
