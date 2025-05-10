@@ -49,7 +49,7 @@ const AmenitiesTable = () => {
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h2>{t('amenities')}</h2>
         <Link to="/amenities/addamenities" className="btn btn-primary">
-          {t('addAmenity')}
+          + Add Amenity
         </Link>
       </div>
 
