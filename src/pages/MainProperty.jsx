@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import API from '../utils/api'; // Axios instance with baseURL
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import API from '../utils/api'; 
+import { useTranslation } from 'react-i18next'; 
 
 const PropertyCardsPublic = () => {
-  const { t } = useTranslation(); // Initialize translation hook
+  const { t } = useTranslation();
   const [properties, setProperties] = useState([]);
   const [error, setError] = useState('');
   const [selectedCity, setSelectedCity] = useState('All');
@@ -12,7 +12,7 @@ const PropertyCardsPublic = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const token = localStorage.getItem('token'); // Adjust based on where you store the token
+        const token = localStorage.getItem('token');
 
         const res = await API.get('/properties', {
           headers: { Authorization: `Bearer ${token}` },
@@ -41,10 +41,9 @@ const PropertyCardsPublic = () => {
       <div className="container">
         {/* Title */}
         <div className="text-center mx-auto mb-4">
-          <h1 className="mb-3">{t('explore_title')}</h1> {/* Use translation here */}
+          <h1 className="mb-3">{t('explore_title')}</h1> 
         </div>
 
-        {/* City Filter Buttons */}
         <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
           {['All', 'Dubai', 'Abu Dhabi', 'Sharjah'].map((city) => (
             <button
