@@ -8,7 +8,6 @@ const EditUser = () => {
   const { id } = useParams();
   const { t } = useTranslation();
 
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -117,14 +116,19 @@ const EditUser = () => {
 
   const previewImage = (file) => {
     if (!file) return null;
-  
-    if (typeof file !== 'string') {
+
+    // If the file is a string (URL), return the URL directly
+    if (typeof file === 'string') {
+      return `https://betak-backend.onrender.com/${file.replace(/\\/g, '/')}`;
+    }
+
+    // If the file is an object (for new uploads), create a URL from the file object
+    if (file instanceof Blob) {
       return URL.createObjectURL(file);
     }
-  
-    return `https://betak-backend.onrender.com/${file.replace(/\\/g, '/')}`; 
+
+    return null;
   };
-  
 
   return (
     <div className="container content-wrapper mt-4">
@@ -187,8 +191,6 @@ const EditUser = () => {
           </div>
 
           <div className="col-md-6">
-          
-
             <div className="form-group">
               <label htmlFor="passportFirstPage">{t('passport_first_page')}</label>
               <input
