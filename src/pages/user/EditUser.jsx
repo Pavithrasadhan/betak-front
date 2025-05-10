@@ -122,7 +122,7 @@ const EditUser = () => {
       return URL.createObjectURL(file);
     }
   
-    return `http://localhost:3001/${file.replace(/\\/g, '/')}`; 
+    return `https://betak-backend.onrender.com/${file.replace(/\\/g, '/')}`; 
   };
   
 

@@ -192,7 +192,7 @@ const EditProperty = () => {
               {existingImages.map((img, idx) => (
                 <img
                   key={idx}
-                  src={`http://localhost:3001/${img.replace(/\\/g, '/')}`}
+                  src={`https://betak-backend.onrender.com/${img.replace(/\\/g, '/')}`}
                   alt="property"
                   width="80"
                   height="60"
