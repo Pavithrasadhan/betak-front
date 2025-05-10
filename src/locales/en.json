@@ -200,7 +200,7 @@
     "errorNameRequired": "Amenity name is required",
     "errorAdd": "Failed to add amenity",
     "amenities": "Amenities",
-    "addAmenity": "+ Add Amenity",
+    "addAmenity": "Add Amenity",
     "icon": "Icon",
     "name": "Name",
     "action": "Action",
