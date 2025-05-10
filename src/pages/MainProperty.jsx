@@ -79,7 +79,7 @@ const PropertyCardsPublic = () => {
                       >
                         <div style={{ padding: '20px' }}>
                           <img
-                            src={`http://localhost:3001/${property.images?.[0]?.replace(/\\/g, '/')}`}
+                            src={`https://betak-backend.onrender.com/${property.images?.[0]?.replace(/\\/g, '/')}`}
                             alt="Property"
                             className="img-fluid rounded mb-3 d-block mx-auto"
                             style={{

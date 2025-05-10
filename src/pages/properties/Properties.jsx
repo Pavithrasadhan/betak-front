@@ -83,7 +83,7 @@ const PropertyTable = () => {
                   <td>
                     {property.images?.length > 0 ? (
                       <img
-                        src={`http://localhost:3001/${property.images[0].replace(/\\/g,'/')}`}
+                        src={`https://betak-backend.onrender.com/${property.images[0].replace(/\\/g,'/')}`}
                         alt="property"
                         width="60"
                         height="50"

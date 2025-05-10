@@ -79,7 +79,7 @@ const PropertyDetails = () => {
               {/* Main Image */}
               <div className="position-relative main-image-container" style={{ flex: '1', minWidth: '300px', marginRight: '15px' }}>
                 <img
-                  src={`http://localhost:3001/${property.images[0].replace(/\\/g, '/')}`}
+                  src={`https://betak-backend.onrender.com/${property.images[0].replace(/\\/g, '/')}`}
                   alt="Main Property"
                   className="w-100"
                   style={{ maxHeight: '500px', objectFit: 'cover', borderRadius: '10px' }}
@@ -108,7 +108,7 @@ const PropertyDetails = () => {
                 {property.images.slice(1).map((img, idx) => (
                   <img
                     key={idx}
-                    src={`http://localhost:3001/${img.replace(/\\/g, '/')}`}
+                    src={`https://betak-backend.onrender.com/${img.replace(/\\/g, '/')}`}
                     alt={`Property ${idx + 2}`}
                     className="rounded shadow"
                     style={{ width: '300px', height: 'auto', objectFit: 'cover' }}

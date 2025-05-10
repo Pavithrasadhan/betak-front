@@ -140,7 +140,7 @@ const PropertyList = () => {
                             property.images.map((img, index) => (
                               <div key={index} style={{ padding: '5px' }}>
                                 <img
-                                  src={`http://localhost:3001/${img.replace(/\\/g, '/')}`}
+                                  src={`https://betak-backend.onrender.com/${img.replace(/\\/g, '/')}`}
                                   alt={`Property ${index + 1}`}
                                   className="img-fluid"
                                   style={{
